@@ -8,7 +8,6 @@ import {
   Trophy, Star, Play
 } from 'lucide-react';
 
-// Custom SVG Brand Icons (Replaces removed Lucide brand icons)
 const Linkedin = (props) => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-6a2 2 0 0 0-2-2 2 2 0 0 0-2 2v6h-4v-7a6 6 0 0 1 6-6z"/>
@@ -104,6 +103,9 @@ const GlobalStyles = () => (
     ::-webkit-scrollbar-track { background: #030712; }
     ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
     @media (pointer: fine) {
       body { cursor: none; }
@@ -322,7 +324,7 @@ const HeroSection = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tighter leading-[1.1]">
-            Hrishikesh M.
+            Hrishikesh M
           </h1>
           
           <div className="h-[40px] md:h-[60px] flex items-center">
@@ -341,7 +343,7 @@ const HeroSection = () => {
           </div>
           
           <p className="text-lg md:text-xl text-slate-300 max-w-xl font-light leading-relaxed">
-            Postgraduate Physics Teacher & AI Educator blending deep subject knowledge with cutting-edge digital innovation to transform learning experiences.
+            Post Graduate Physics Teacher & AI Educator blending deep subject knowledge with cutting-edge digital innovation to transform learning experiences.
           </p>
           
           <div className="flex flex-wrap items-center gap-4 mt-4">
@@ -428,16 +430,16 @@ const AboutSection = () => {
             <div>
               <h3 className="text-blue-400 font-bold tracking-wider uppercase text-sm mb-2">The Narrative</h3>
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white">
-                Bridging the gap between <span className="text-gradient">core physics</span> and <span className="text-gradient">AI innovation</span>.
+                Bridging the gap between <span className="text-gradient">Core Physics</span> and <span className="text-gradient">AI Innovation</span>.
               </h2>
             </div>
             
             <div className="space-y-6 text-lg text-slate-300 font-light leading-relaxed">
               <p>
-                As a passionate <strong className="text-white font-semibold">postgraduate physics teacher</strong>, I believe education is not just about imparting facts but igniting curiosity. My journey is rooted in making complex physical phenomena accessible and engaging.
+                As a passionate <strong className="text-white font-semibold">Post Graduate Physics Teacher</strong>, I believe education is not just about imparting facts, but igniting curiosity. My journey is rooted in making complex physical phenomena accessible and engaging.
               </p>
               <p>
-                Recognizing the paradigm shift in technology, I evolved into an <strong className="text-white font-semibold">AI & ICT educator</strong>. I seamlessly integrate advanced digital tools into the curriculum, preparing students not just for exams but for the future.
+                Recognizing the paradigm shift in technology, I evolved into an <strong className="text-white font-semibold">AI & ICT Educator</strong>. I seamlessly integrate advanced digital tools into the curriculum, preparing students not just for exams, but for the future.
               </p>
               <p>
                 This vision led to the creation of <strong className="text-blue-400 font-semibold">Skill Aura</strong>, a platform dedicated to empowering educators and students alike through technology-driven learning design and modern pedagogical strategies.
@@ -447,7 +449,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-6 pt-6 border-t border-white/10">
               <div>
                 <h4 className="text-4xl font-extrabold text-white mb-2">7+</h4>
-                <p className="text-sm text-slate-300 uppercase tracking-wider font-semibold">Years of Experience</p>
+                <p className="text-sm text-slate-300 uppercase tracking-wider font-semibold">Years Experience</p>
               </div>
               <div>
                 <h4 className="text-4xl font-extrabold text-white mb-2">1000+</h4>
